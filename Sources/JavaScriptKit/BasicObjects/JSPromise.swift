@@ -74,7 +74,7 @@ public final class JSPromise: JSBridgedClass {
         self.init(unsafelyWrapping: Self.constructor.reject!(reason).object!)
     }
 
-    /** Schedules the `success` closure to be invoked on sucessful completion of `self`.
+    /** Schedules the `success` closure to be invoked on successful completion of `self`.
     */
     @discardableResult
     public func then(success: @escaping (JSValue) -> ConvertibleToJSValue) -> JSPromise {
@@ -84,7 +84,7 @@ public final class JSPromise: JSBridgedClass {
         return JSPromise(unsafelyWrapping: jsObject.then!(closure).object!)
     }
 
-    /** Schedules the `success` closure to be invoked on sucessful completion of `self`.
+    /** Schedules the `success` closure to be invoked on successful completion of `self`.
     */
     @discardableResult
     public func then(success: @escaping (JSValue) -> ConvertibleToJSValue,

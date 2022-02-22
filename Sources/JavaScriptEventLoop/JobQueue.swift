@@ -1,4 +1,4 @@
-// This file contains the job queue implementation which re-order jobs based on their priority.
+// This file contains the job queue implementation which re-orders jobs based on their priority.
 // The current implementation is much simple to be easily debugged, but should be re-implemented
 // using priority queue ideally.
 
